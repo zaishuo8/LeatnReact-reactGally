@@ -36,8 +36,6 @@ let ImgFigure = React.createClass({
     //imgFigure的点击处理函数
     handleClick: function(e){
 
-        // this.props.inverse();
-
         if(!this.props.arrange.isCenter){
             this.props.center();
         }
@@ -97,6 +95,7 @@ class AppComponent extends React.Component {
             //   rotate: 0   //旋转角度
             //   isInverse: false //图片正反面
             //   isCenter: false  //图片是否居中
+            //   isInverse: false  //是否翻转
             // }
             ]
         }
@@ -127,9 +126,9 @@ class AppComponent extends React.Component {
     * @return {function}
     * */
     center = function(index){
-      return function () {
-        this.rearrange(index);
-      }.bind(this);
+        return function () {
+            this.rearrange(index);
+        }.bind(this);
     }
 
     /*
@@ -139,15 +138,15 @@ class AppComponent extends React.Component {
     * */
     // inverse = function (index) {
     //
-    //   return function () {
-    //     let imgsArrangeArr = this.state.imgsArrangeArr;
+    //     return function () {
+    //         let imgsArrangeArr = this.state.imgsArrangeArr;
     //
-    //     imgsArrangeArr[index].isInverse = !imgsArrangeArr[index].isInverse;
+    //         imgsArrangeArr[index].isInverse = !imgsArrangeArr[index].isInverse;
     //
-    //     this.setState({
-    //       imgsArrangeArr: imgsArrangeArr
-    //     });
-    //   }.bind(this);
+    //         this.setState({
+    //             imgsArrangeArr: imgsArrangeArr
+    //         });
+    //     }.bind(this);
     // }
 
 
@@ -175,6 +174,7 @@ class AppComponent extends React.Component {
             pos: centerPos,
             rotate: 0,
             isCenter:true
+            // isInverse: false
         }
 
 
@@ -191,6 +191,7 @@ class AppComponent extends React.Component {
                 },
                 rotate: get30DegRandom(),
                 isCenter: false
+                // isInverse: false
             }
         });
 
@@ -214,6 +215,7 @@ class AppComponent extends React.Component {
                 },
                 rotate: get30DegRandom(),
                 isCenter: false
+                // isInverse: false
             }
         }
 

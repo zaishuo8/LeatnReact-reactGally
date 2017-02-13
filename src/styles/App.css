@@ -65,8 +65,13 @@ html, body{
 
     box-sizing: border-box;
     cursor: pointer;
+
+    transition: left 0.6s ease-in-out,top 0.6s ease-in-out;
 }
 /*image-figure -- end*/
+
+
+
 /*figcaption --start*/
 .img-sec figcaption{
     text-align: center;
