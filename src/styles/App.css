@@ -95,4 +95,32 @@ html, body{
 
     text-align: center;
 }
+.controller-nav .controller-unit{
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+    background-color: #aaa;
+    border-radius: 50%;
+
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform: scale(.5);
+
+    transition: transform .6s ease-in-out, background-color .3s;
+}
+.controller-nav .is-center{
+
+    background-color: #888;
+
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+}
 /*controller -- end*/
