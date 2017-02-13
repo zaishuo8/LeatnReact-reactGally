@@ -1,5 +1,5 @@
 # LeatnReact-reactGally
-学习慕课网的视频《React实践图片画廊应用》，边看边敲打。还未添加动画效果<br />
+学习慕课网的视频《React实践图片画廊应用》，边看边敲打。还未添加翻转效果<br />
 知识点：<br />
 1.React框架的使用<br />
 2.Yeoman的使用<br />
@@ -15,6 +15,7 @@ PS：由于目前的 webpack 和 React 版本和视频中不同，所以一些�
 待解决问题：<br/>
 1.不熟悉scss,暂时用css代替<br />
 2.对项目进行 压缩打包发布<br />
+3.CSS3的翻转原理<br/>
 <br />
 React文件在 src --> components --> Main.js中：<br />
 React相关知识点：<br />
