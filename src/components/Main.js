@@ -1,5 +1,6 @@
 require('normalize.css/normalize.css');
-require('styles/App.css');
+// require('styles/App.css');
+require('styles/App.scss');
 
 import React from 'react';
 
@@ -57,7 +58,7 @@ let ImgFigure = React.createClass({
 
         //如果图片旋转角度有值且不为0, 添加角度
         if(this.props.arrange.rotate){
-            (['MozTransform','msTransform','WebkitTransform','']).forEach(function (value, index) {
+            (['MozTransform','msTransform','WebkitTransform','']).forEach(function (value) {
                 styleObj[value + 'transform'] = 'rotate(' + this.props.arrange.rotate + 'deg)';
             }.bind(this));
         }
@@ -301,7 +302,7 @@ class AppComponent extends React.Component {
         this.Constant.vPosRange.topY[1] = halfStageH - halfImgH * 3;
 
         this.rearrange(0);
-    };
+    }
 
     render() {
 
