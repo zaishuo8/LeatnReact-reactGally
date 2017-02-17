@@ -12,10 +12,6 @@ PS：由于目前的 webpack 和 React 版本和视频中不同，所以一些�
       class AppComponent extends React.Component {}，所以需要在 constructor 中初始化 state<br />
     4.需要 require('react-dom') 进行DOM操作<br />
 <br />
-待解决问题：<br/>
-1.不熟悉scss,暂时用css代替<br />
-2.对项目进行 压缩打包发布<br />
-3.CSS3的翻转原理<br/>
 <br />
 React文件在 src --> components --> Main.js中：<br />
 React相关知识点：<br />
@@ -29,3 +25,14 @@ React相关知识点：<br />
 &nbsp;&nbsp;&nbsp;&nbsp; (1)初始化 state 进行渲染<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; (2)componentDidMount: 通过 ref 获得 DOM ，进行计算,然后通过 setState 重新渲染，排布图片<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; (3)点击ImgFigure，setState 重新渲染，排布图片
+
+
+<br/>
+<br/>
+
+思考：<br/>
+1. AppComponent 作为容器组件(视频称“大管家”)，有 state, 逻辑处理函数，结构较复杂<br/>
+2. ImgFigure 作为展示组件，没有 state ,其数据来源都是 props ,结构简单;
+
+
+
